@@ -7,12 +7,14 @@ py-modules = ['mpv']
 
 [project]
 name = "mpv"
-version = "v1.0.8"
+version = "1.0.8"
 description = "A python interface to the mpv media player"
 readme = "README.rst"
-authors = [{name = "jaseg", email = "mpv@jaseg.de"}]
-license = {text = "GPLv2+ or LGPLv2.1+"}
-requires-python = ">=3.9"
+authors = [
+    { name = "jaseg", email = "mpv@jaseg.de" }
+]
+license = { text = "GPLv2+ or LGPLv2.1+" }
+requires-python = ">=3.8"
 keywords = ['mpv', 'library', 'video', 'audio', 'player', 'display', 'multimedia']
 classifiers = [
     'Development Status :: 5 - Production/Stable',
@@ -23,6 +25,7 @@ classifiers = [
     'Natural Language :: English',
     'Operating System :: POSIX',
     'Programming Language :: C',
+    'Programming Language :: Python :: 3.8',
     'Programming Language :: Python :: 3.9',
     'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.11',
@@ -37,7 +40,7 @@ homepage = "https://github.com/jaseg/python-mpv"
 [project.optional-dependencies]
 screenshot_raw = ["Pillow"]
 test = [
-    'PyVirtualDisplay',
-    'pytest',
-    'pytest-rerunfailures'
+    "PyVirtualDisplay",
+    "pytest",
+    "pytest-rerunfailures"
 ]
