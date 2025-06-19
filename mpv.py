@@ -68,7 +68,7 @@ elif os.name == "posix":
     # libmpv requires LC_NUMERIC to be set to "C". Since messing with global variables everyone else relies upon is
     # still better than segfaulting, we are setting LC_NUMERIC to "C".
     locale.setlocale(locale.LC_NUMERIC, 'C')
-    backend = CDLL("libmpv.so.1")
+    backend = CDLL("libmpv.so.2")
     fs_enc = sys.getfilesystemencoding()
     print(">>> Backend - ", backend)
 
